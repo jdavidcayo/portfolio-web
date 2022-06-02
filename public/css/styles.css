@@ -8,6 +8,17 @@
   width: auto;
 }
 
+.img-about{
+  height: 250px;
+  width: 250px;
+}
+
+.logos{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
 .overflow {
 
 }

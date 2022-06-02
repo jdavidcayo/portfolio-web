@@ -3,3 +3,14 @@
   width: 180px;
   border-radius: 25px;
 }
+.img {
+  height: 250px !important;
+  width: auto;
+}
+
+.overflow {
+
+}
+.overflow:hover{
+
+}

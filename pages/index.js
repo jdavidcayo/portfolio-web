@@ -1,5 +1,5 @@
 import Layout from '../components/Layout'
-import { skills, experiences } from '../profile'
+import { skills, experiences, proyectos } from '../profile'
 
 const app = () => (
   <Layout>
@@ -24,7 +24,7 @@ const app = () => (
     </div>
 
     {/* Seccion II */}
-    <div className="row my-2">
+    <div className="row mt-2 mb-2">
       <div className="col-md-4">
         <div className="card">
           <div className="card-body">
@@ -47,19 +47,57 @@ const app = () => (
         <div className="card">
           <div className="card-body">
             <h3>Experiencia</h3>
+            <ul>
             {
               experiences.map( ({title, ageIn, ageOut, details}, i) => (
-                <div key={i}>
-                  <h4>{ title }</h4>
-                  <h5>{ ageIn }-{ ` ${ ageOut }` }</h5>
-                  <p>{ details }</p>
-                </div>
+                <li key={i}>
+                <h4>{ title }</h4>
+                <h5>{ ageIn } - { ageOut }</h5>
+                <p>{ details }</p>
+                </li>
               ))
             }
+            </ul>
           </div>
         </div>
       </div>
     </div>
+
+    {/* Seccion portfolio */}
+
+    <div className="row">
+      <div className="col-md-12">
+        <div className="card card-body bg-dark">
+          <div className="row">
+
+            <div className="col-md-12">
+              <h2 className="text-center text-light">Portfolio</h2>
+            </div>
+
+            {/*Card de cada proyecto*/}
+            {
+            proyectos.map( ({title, description, img}, i) => (
+              <div className="col-md-4 my-2" key={i}>
+                <div className="card h-100">
+                  <div className="overflow">
+                    <img src={`./img/${img}`} alt="imagen" className="img img-fluid"/>
+                  </div>
+                  <div className="card-body text-center">
+                    <h5>{title}</h5>
+                    <p>{description}</p>
+                    <a href="#" className="btn btn-outline-secondary btn-sm">Github</a>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
   </Layout>
 )
 

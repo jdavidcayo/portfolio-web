@@ -35,3 +35,21 @@ export const experiences = [
     details: "Personal de tropa, trabajo en equipo, organizacion, resolucion de conflictos."
   },
 ]
+
+export const proyectos = [
+  {
+    title: "davidcayo.com.ar",
+    img: "img2.png",
+    description: "Portfolio web propio usando el framework next.js + bootstrap para el rapido desarrollo de la aplicacion."
+  },
+  {
+    title: "react-bootstrap-test-cards",
+    img: "img1.png",
+    description: "Uso de react.js para la generacion de componentes, ademas del uso del framework de css Bootstrap para mostrar cards.",
+  },
+  {
+    title: "Landing-page-dc",
+    img: "img2.png",
+    description:"Usando react.js para la creacion de una landing page. candidata de homepage para mi portfolio."
+  },
+]

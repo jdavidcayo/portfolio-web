@@ -21,17 +21,17 @@ export const skills = [
   },
 ]
 
-export const experience = [
-  {
-    title:"Servicio Penitenciario",
-    in: 2011,
-    out: "a la fecha",
-    details: "Personal de tropa, trabajo en equipo, organizacion, resolucion de conflictos."
-  },
+export const experiences = [
   {
     title:"Desarrollador web freelance",
-    in:2020,
-    out:"a la fecha",
+    ageIn:2020,
+    ageOut:"a la fecha",
     details:"Desarrollo de paginas webs de manera independiente, Maquetacion, frontend/backend, usando Javascript/React.js y en el backend Node.js"
-  }
+  },
+  {
+    title:"Servicio Penitenciario",
+    ageIn: 2011,
+    ageOut: "a la fecha",
+    details: "Personal de tropa, trabajo en equipo, organizacion, resolucion de conflictos."
+  },
 ]

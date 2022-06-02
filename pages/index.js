@@ -1,5 +1,5 @@
 import Layout from '../components/Layout'
-import {skills} from '../profile'
+import { skills, experiences } from '../profile'
 
 const app = () => (
   <Layout>
@@ -47,6 +47,15 @@ const app = () => (
         <div className="card">
           <div className="card-body">
             <h3>Experiencia</h3>
+            {
+              experiences.map( ({title, ageIn, ageOut, details}, i) => (
+                <div key={i}>
+                  <h4>{ title }</h4>
+                  <h5>{ ageIn }-{ ` ${ ageOut }` }</h5>
+                  <p>{ details }</p>
+                </div>
+              ))
+            }
           </div>
         </div>
       </div>
